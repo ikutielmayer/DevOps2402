@@ -1,4 +1,4 @@
-properties([pipelineTriggers([pollSCM('H * * * *')])])
+properties([parameters([string(defaultValue: 'Yekutiel', description: 'WHAT IS YOUR nAME?', name: 'NAME')]), pipelineTriggers([pollSCM('H * * * *')])])
 
 pipeline {
     agent any
