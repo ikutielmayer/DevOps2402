@@ -7,6 +7,7 @@ pipeline {
         stage('Clone') {
             steps {
                 echo 'Git Clone OK'
+                echo NAME
                 git "https://github.com/ikutielmayer/DevOps2402.git"
             }
         }
