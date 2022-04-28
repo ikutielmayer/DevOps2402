@@ -16,8 +16,9 @@ pipeline {
                 sh "ls -l"
             }
         }
-          stage('Ejecucion') {
+        stage('Ejecucion') {
             steps {
+                echo "Ejecucion del Main"
                 python3 main.py
             }
         }
