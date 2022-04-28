@@ -16,5 +16,10 @@ pipeline {
                 sh "ls -l"
             }
         }
+          stage('Ejecucion') {
+            steps {
+                python3 main.py
+            }
+        }
     }
 }
